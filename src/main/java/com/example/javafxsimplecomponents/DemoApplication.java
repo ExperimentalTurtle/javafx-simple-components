@@ -42,6 +42,7 @@ public class DemoApplication extends Application {
         URL tabsResource = getClass().getResource("/com/example/javafxsimplecomponents/styles/tabs.css");
         URL checkboxResource = getClass().getResource("/com/example/javafxsimplecomponents/styles/checkbox.css");
         URL radioResource = getClass().getResource("/com/example/javafxsimplecomponents/styles/radio.css");
+        URL listResource = getClass().getResource("/com/example/javafxsimplecomponents/styles/list.css");
 
         // forms
         URL formsResource = getClass().getResource("/com/example/javafxsimplecomponents/styles/forms.css");
@@ -57,6 +58,7 @@ public class DemoApplication extends Application {
         assert tabsResource != null;
         assert checkboxResource != null;
         assert radioResource != null;
+        assert listResource != null;
 
         assert formsResource != null;
 
@@ -72,5 +74,6 @@ public class DemoApplication extends Application {
         scene.getStylesheets().add(checkboxResource.toExternalForm());
         scene.getStylesheets().add(radioResource.toExternalForm());
         scene.getStylesheets().add(formsResource.toExternalForm());
+        scene.getStylesheets().add(listResource.toExternalForm());
     }
 }

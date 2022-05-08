@@ -15,7 +15,7 @@ NORMAL TEXT INPUT
 	-fx-background-color: fx-primary;
 
 	-fx-border-color: fx-border-color;
-    -fx-prompt-text-fill: fx-border-color;
+    -fx-prompt-text-fill: fx-form-color;
 }
 
 .text-field:focused {
@@ -37,12 +37,12 @@ SPINNER
 	-fx-background-color: fx-primary;
 
 	-fx-border-color: fx-border-color;
-    -fx-prompt-text-fill: fx-border-color;
+    -fx-prompt-text-fill: fx-form-color;
 }
 
 
 .spinner .text-field {
-    -fx-text-fill: fx-border-color;
+    -fx-text-fill: fx-form-color;
 
 	-fx-background-color: transparent;
 	-fx-background-radius: inherit;
