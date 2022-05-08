@@ -27,7 +27,6 @@ public class DemoController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
         listView.getItems().addAll(generalItems);
         listView.getSelectionModel().selectFirst();
 

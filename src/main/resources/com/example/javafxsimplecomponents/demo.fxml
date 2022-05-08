@@ -11,6 +11,7 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
@@ -18,70 +19,63 @@
 <?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane style="-fx-background-color: #3b444b"
-            fx:id="anchorPane"
-            prefHeight="900.0"
-            prefWidth="1400.0"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.javafxsimplecomponents.controllers.DemoController">
+<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory?>
+<AnchorPane fx:id="anchorPane" prefHeight="900.0" prefWidth="1400.0" style="-fx-background-color: #3b444b" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.example.javafxsimplecomponents.controllers.DemoController">
     <!-- Menu Bar -->
     <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <Menu mnemonicParsing="false" text="File">
             <MenuItem mnemonicParsing="false" text="Menu item with shortcut">
                 <accelerator>
-                    <KeyCodeCombination alt="DOWN" code="N" control="UP" meta="UP" shift="UP" shortcut="UP"/>
+                    <KeyCodeCombination alt="DOWN" code="N" control="UP" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="Close1"/>
+            <MenuItem mnemonicParsing="false" text="Close1" />
             <MenuItem mnemonicParsing="false" text="Close2">
                 <accelerator>
-                    <KeyCodeCombination alt="DOWN" code="X" control="UP" meta="UP" shift="UP" shortcut="UP"/>
+                    <KeyCodeCombination alt="DOWN" code="X" control="UP" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" text="Close3"/>
-            <MenuItem mnemonicParsing="false" text="Close4"/>
+            <MenuItem mnemonicParsing="false" text="Close3" />
+            <MenuItem mnemonicParsing="false" text="Close4" />
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
-            <MenuItem mnemonicParsing="false" text="Delete"/>
+            <MenuItem mnemonicParsing="false" text="Delete" />
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About"/>
+            <MenuItem mnemonicParsing="false" text="About" />
         </Menu>
     </MenuBar>
 
-    <ColorPicker fx:id="colorPicker" layoutX="424.0" layoutY="76.0"/>
-    <Button layoutX="29.0" layoutY="76.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="83.0"
-            styleClass="elegant_button" text="inc"/>
-    <ListView fx:id="listView" layoutX="377.0" layoutY="546.0" prefHeight="300.0" prefWidth="300.0"/>
-    <TreeView fx:id="treeView" layoutX="29.0" layoutY="546.0" prefHeight="300.0" prefWidth="300.0"/>
+    <ColorPicker fx:id="colorPicker" layoutX="424.0" layoutY="76.0" />
+    <Button layoutX="29.0" layoutY="76.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="83.0" styleClass="elegant_button" text="inc" />
+    <ListView fx:id="listView" layoutX="377.0" layoutY="546.0" prefHeight="300.0" prefWidth="300.0" />
+    <TreeView fx:id="treeView" layoutX="29.0" layoutY="546.0" prefHeight="300.0" prefWidth="300.0" />
 
     <ComboBox layoutX="141.0" layoutY="76.0" prefHeight="24.0" prefWidth="250.0" promptText="choose">
         <items>
             <FXCollections fx:factory="observableArrayList">
-                <String fx:value="Apple"/>
-                <String fx:value="Orange"/>
-                <String fx:value="Pear1 Pear1 Pear1 Pear1 Pear1"/>
-                <String fx:value="Pear2 Pear2 Pear2 Pear2 Pear2"/>
-                <String fx:value="Pear3 Pear3 Pear3 Pear3 Pear3"/>
-                <String fx:value="Pear4 Pear4 Pear4 Pear4 Pear4"/>
-                <String fx:value="Pear5 Pear5 Pear5 Pear5 Pear5"/>
-                <String fx:value="Pear6 Pear6 Pear6 Pear6 Pear6"/>
-                <String fx:value="Pear7 Pear7 Pear7 Pear7 Pear7"/>
-                <String fx:value="Pear8 Pear8 Pear8 Pear8 Pear8"/>
-                <String fx:value="Pear9 Pear9 Pear9 Pear9 Pear9"/>
-                <String fx:value="Pear10 Pear10 Pear10 Pear10 Pear10"/>
+                <String fx:value="Apple" />
+                <String fx:value="Orange" />
+                <String fx:value="Pear1 Pear1 Pear1 Pear1 Pear1" />
+                <String fx:value="Pear2 Pear2 Pear2 Pear2 Pear2" />
+                <String fx:value="Pear3 Pear3 Pear3 Pear3 Pear3" />
+                <String fx:value="Pear4 Pear4 Pear4 Pear4 Pear4" />
+                <String fx:value="Pear5 Pear5 Pear5 Pear5 Pear5" />
+                <String fx:value="Pear6 Pear6 Pear6 Pear6 Pear6" />
+                <String fx:value="Pear7 Pear7 Pear7 Pear7 Pear7" />
+                <String fx:value="Pear8 Pear8 Pear8 Pear8 Pear8" />
+                <String fx:value="Pear9 Pear9 Pear9 Pear9 Pear9" />
+                <String fx:value="Pear10 Pear10 Pear10 Pear10 Pear10" />
             </FXCollections>
         </items>
     </ComboBox>
-    <CheckBox layoutX="188.0" layoutY="143.0" mnemonicParsing="false" text="CheckBox"/>
-    <RadioButton layoutX="29.0" layoutY="143.0" mnemonicParsing="false" text="RadioButton"/>
-    <TextField layoutX="27.0" layoutY="227.0"/>
-
-    <TabPane layoutX="720.0"
-             layoutY="546.0"
-             prefHeight="300.0">
-        <Tab text="Tab 1" closable="false"/>
-        <Tab text="Tab 2" closable="false"/>
-        <Tab text="Closable Tab"/>
+    <CheckBox layoutX="188.0" layoutY="143.0" mnemonicParsing="false" text="CheckBox" />
+    <RadioButton layoutX="29.0" layoutY="143.0" mnemonicParsing="false" text="RadioButton" />
+    <TextField layoutX="27.0" layoutY="227.0" promptText="Enter some text" />
+    <TabPane layoutX="720.0" layoutY="546.0" prefHeight="300.0">
+        <Tab closable="false" text="Tab 1" />
+        <Tab closable="false" text="Tab 2" />
+        <Tab text="Closable Tab" />
     </TabPane>
+    <Spinner layoutX="220.0" layoutY="227.0" prefWidth="250" promptText="Enter some numbers" min="0" max="1000" initialValue="0"/>
 </AnchorPane>
