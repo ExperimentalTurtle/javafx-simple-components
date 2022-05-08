@@ -1,0 +1,10 @@
+.sidebar{
+    -fx-background-color: #131218;
+}
+.sidebar-icon{
+    -fx-fill: #4E4F56;
+    -fx-cursor: hand;
+}
+.sidebar-icon:hover{
+    -fx-fill: #FD0E55;
+}

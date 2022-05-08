@@ -1,0 +1,29 @@
+.tree-view {
+	-fx-background-color: fx-primary;
+}
+
+.tree-cell {
+    -fx-text-fill: white;
+	-fx-background-color: transparent;
+}
+
+.tree-cell:focused {
+	-fx-background-color: fx-primary-dim;
+}
+
+.tree-cell .arrow {
+    -fx-background-color: white;
+}
+
+
+/*
+.tree-item .tree-disclosure-node .arrow {
+    -fx-background-image: url("../arrow-forward.png");
+}
+
+.tree-cell:expanded .tree-disclosure-node .arrow {
+    -fx-shape: null;
+    -fx-background-color: null;
+    -fx-background-image: url("minus-arrow.png");
+}
+*/
