@@ -16,6 +16,7 @@ NORMAL TEXT INPUT
 
 	-fx-border-color: fx-border-color;
     -fx-prompt-text-fill: fx-form-color;
+    -fx-text-fill: fx-form-color;
 }
 
 .text-field:focused {
