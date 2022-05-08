@@ -23,7 +23,8 @@
 	-fx-padding: 0 8;
 }
 
-.scroll-pane .corner,.scroll-pane .filler {
+.scroll-pane .corner,
+.scroll-pane .filler {
 	-fx-background-color: transparent;
 	-fx-background-insets: 0;
 }
